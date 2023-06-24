@@ -10,17 +10,11 @@ public class MathControllerTest {
     public void testAddNumbers() {
         MathController mathController = new MathController();
 
-        // Set up input parameters
         int number1 = 2;
         int number2 = 3;
 
-        // Create a MathRequest object and set the values
-        MathController.MathRequest mathRequest = new MathController.MathRequest();
-        mathRequest.setNumber1(number1);
-        mathRequest.setNumber2(number2);
-        int result = mathController.addNumbers(mathRequest);
+        int result = mathController.addNumbers(number1,number2);
 
-        // Verify the result
         int expectedSum = 5;
         assertEquals(expectedSum, result);
     }
