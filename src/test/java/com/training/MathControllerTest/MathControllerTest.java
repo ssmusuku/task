@@ -16,6 +16,7 @@ public class MathControllerTest {
         int result = mathController.addNumbers(number1,number2);
 
         int expectedSum = 5;
+
         assertEquals(expectedSum, result);
     }
 }
